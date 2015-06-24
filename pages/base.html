@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>{% block title %}缺省标题{% end %}</title>
+    {% block js %}{% end %} 
+  </head>
+  <body>
+  
+
+    <table border=0 width=100%>
+      <div style="position: absolute;top:400px;">        
+      <body background="/static/111.jpg"  height="35%" width="100%" >
+     <tr >
+        <td style="float:left;width:7em;top:100px;">菜单
+
+        <ul>
+          <li><a href="/">返回主页</a></li>
+          <li><a href="/coulist">学生</a></li>
+        </ul>
+        </td>
+        <td>
+        {% block content %}
+        {% end %}          
+        </td>
+      </tr>
+      </div>
+
+      <img src="/static/1325763885_12_b7rc.jpg"alt=""title="tianjin"/>
+            <a href="http://www.tjpu.edu.cn/"target="_blank">天津工业大学主页</a>
+
+     <font color="#aadddaa"> <h3><marquee>天津工业大学学生管理系统</marquee></h3></font>
+   </body>
+</html>
